@@ -52,14 +52,17 @@ export default function Home() {
           <p className="text-gray-500 mb-14">eBay販売のすべてをプロがサポート</p>
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { icon: "📦", title: "出品代行", desc: "商品リサーチから出品作業まで、すべてこちらで対応します。" },
-              { icon: "📊", title: "在庫管理", desc: "在庫の確認・補充・調整を一括管理。手間いらずです。" },
-              { icon: "💰", title: "成果報酬型", desc: "利益が出た分からのみ報酬をいただきます。固定費は一切かかりません。" },
+              { img: "/出品代行.png", title: "出品代行サービス", desc: "ご自身でリサーチする必要がございません！面倒な事は一切なく利益が出る仕組みを提供いたします！" },
+              { img: "/在庫管理.png", title: "在庫管理", desc: "在庫の確認・補充・調整を一括管理。何度もサイトにログインする必要がございません！" },
+              { img: "/発送代行.png", title: "発送代行サービス", desc: "面倒な海外への発送作業、全てこちらで行う事が出来ます！！" },
             ].map((item) => (
-              <div key={item.title} className="bg-white rounded-2xl shadow p-8 text-left hover:shadow-md transition">
-                <div className="text-4xl mb-4">{item.icon}</div>
+              <div key={item.title} className="bg-white rounded-2xl shadow text-left hover:shadow-md transition overflow-hidden">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={item.img} alt={item.title} className="w-full object-cover" />
+                <div className="p-8">
                 <h3 className="text-2xl font-bold text-gray-800 mb-2">{item.title}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
+                </div>
               </div>
             ))}
           </div>
