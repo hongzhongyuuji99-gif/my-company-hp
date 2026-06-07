@@ -95,17 +95,20 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-10">
             {[
               {
-                img: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=120&q=80",
+                img: "",
+                offset: "0% 20%",
                 name: "田中 さゆり（30代・主婦）",
                 text: "子育ての合間にできる副業を探していました。固定費がかからないので気軽に始められて、3ヶ月で月3万円の利益が出ています！",
               },
               {
-                img: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=120&q=80",
+                img: "",
+                offset: "50% 20%",
                 name: "鈴木 健太（20代・会社員）",
                 text: "本業が忙しくて時間がない中でも、出品や管理を全部やってもらえるので助かります。リスクなしで始められたのが決め手でした。",
               },
               {
-                img: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=120&q=80",
+                img: "",
+                offset: "100% 20%",
                 name: "山本 あおい（40代・パート）",
                 text: "副業は難しそうと思っていましたが、担当の方が丁寧にサポートしてくれて安心でした。赤字にならない仕組みが本当にありがたいです。",
               },
@@ -119,8 +122,12 @@ export default function Home() {
                     style={{borderLeft: "12px solid transparent", borderRight: "12px solid transparent", borderTop: "14px solid white"}} />
                 </div>
                 {/* アバター */}
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={v.img} alt={v.name} className="w-16 h-16 rounded-full object-cover shadow-md border-4 border-white" />
+                <div className="w-48 h-48 rounded-full shadow-md border-4 border-white" style={{
+                  backgroundImage: "url('/voices.jpg.png')",
+                  backgroundSize: "300% 200%",
+                  backgroundPosition: v.offset,
+                  backgroundRepeat: "no-repeat",
+                }} />
                 <p className="text-sm text-gray-500 mt-2 font-medium">{v.name}</p>
               </div>
             ))}
