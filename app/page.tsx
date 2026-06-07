@@ -19,17 +19,17 @@ export default function Home() {
       <section className="text-white py-28 px-6" style={{background: "linear-gradient(135deg, #1a3a5c 0%, #2e6fa8 25%, #5ab4d6 50%, #1e5f8e 75%, #0d2a47 100%)"}}>
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
           <div className="flex-1 text-center md:text-left">
-            <p className="text-blue-200 text-sm font-semibold uppercase tracking-widest mb-4">eBay副業コンサルティング</p>
-            <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+            <p className="text-blue-200 text-xl font-semibold uppercase tracking-widest mb-4">eBay副業コンサルティング</p>
+            <h1 className="text-5xl md:text-7xl font-extrabold leading-tight mb-6 whitespace-nowrap">
               固定費0円！<br />安心安全な副業！
             </h1>
-            <p className="text-blue-100 text-lg md:text-xl mb-10">
+            <p className="text-blue-100 text-xl md:text-2xl mb-10">
               出品・在庫管理はすべておまかせ。<br />
               成果報酬型だから<span className="font-bold text-white">赤字になるリスクなし。</span>
             </p>
               <a
                 href="#contact"
-                className="glow-button inline-block bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold text-lg px-10 py-4 rounded-full shadow-lg transition"
+                className="glow-button inline-block bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold text-4xl px-12 py-5 rounded-full shadow-lg transition"
               >
                 無料相談はこちら
               </a>
@@ -76,11 +76,11 @@ export default function Home() {
           <p className="text-gray-500 mb-14">リスクゼロではじめられる副業の仕組み</p>
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { num: "01", title: "固定費0円", desc: "月額料金・初期費用は一切不要。利益が出たときだけ報酬が発生します。" },
+              { num: "01", title: "固定費0円", desc: "成果報酬型なので固定費一切不要！報酬は利益からのみで、赤字のリスクがありません。" },
               { num: "02", title: "3ヶ月で利益確約", desc: "適切な運用を続ければ、3ヶ月以内に確実に利益が出る仕組みを提供します。" },
               { num: "03", title: "完全おまかせ", desc: "副業初心者でも安心。面倒な作業はすべてプロが代行します。" },
             ].map((item) => (
-              <div key={item.num} className="border border-blue-100 rounded-2xl p-8 text-left hover:border-blue-400 transition">
+              <div key={item.num} className="border-2 border-gray-800 rounded-2xl p-8 text-left hover:border-black transition">
                 <div className="text-5xl font-extrabold text-blue-400 mb-3">{item.num}</div>
                 <h3 className="text-2xl font-bold text-gray-800 mb-2">{item.title}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
