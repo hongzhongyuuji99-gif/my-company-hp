@@ -1,9 +1,9 @@
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white font-sans">
+    <div className="min-h-screen font-sans" style={{background: "#f0f4f8"}}>
 
       {/* ナビゲーション */}
-      <header className="bg-white shadow-sm sticky top-0 z-50">
+      <header className="sticky top-0 z-50 shadow-sm" style={{background: "#f0f4f8"}}>
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
           <div className="text-xl font-bold text-blue-700">Gathering of Genius</div>
           <nav className="hidden md:flex gap-8 text-sm font-medium text-gray-600">
@@ -46,9 +46,9 @@ export default function Home() {
       </section>
 
       {/* サービス概要 */}
-      <section id="service" className="py-24 px-6 bg-gray-50">
+      <section id="service" className="py-24 px-6" style={{background: "#e8eef4"}}>
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">サービス内容</h2>
+          <h2 className="text-4xl font-bold text-gray-800 mb-4">サービス内容</h2>
           <p className="text-gray-500 mb-14">eBay販売のすべてをプロがサポート</p>
           <div className="grid md:grid-cols-3 gap-8">
             {[
@@ -58,7 +58,7 @@ export default function Home() {
             ].map((item) => (
               <div key={item.title} className="bg-white rounded-2xl shadow p-8 text-left hover:shadow-md transition">
                 <div className="text-4xl mb-4">{item.icon}</div>
-                <h3 className="text-xl font-bold text-gray-800 mb-2">{item.title}</h3>
+                <h3 className="text-2xl font-bold text-gray-800 mb-2">{item.title}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
               </div>
             ))}
@@ -67,9 +67,9 @@ export default function Home() {
       </section>
 
       {/* 選ばれる理由 */}
-      <section id="merit" className="py-24 px-6 bg-white">
+      <section id="merit" className="py-24 px-6" style={{background: "#f0f4f8"}}>
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">選ばれる3つの理由</h2>
+          <h2 className="text-4xl font-bold text-gray-800 mb-4">選ばれる3つの理由</h2>
           <p className="text-gray-500 mb-14">リスクゼロではじめられる副業の仕組み</p>
           <div className="grid md:grid-cols-3 gap-8">
             {[
@@ -78,8 +78,8 @@ export default function Home() {
               { num: "03", title: "完全おまかせ", desc: "副業初心者でも安心。面倒な作業はすべてプロが代行します。" },
             ].map((item) => (
               <div key={item.num} className="border border-blue-100 rounded-2xl p-8 text-left hover:border-blue-400 transition">
-                <div className="text-5xl font-extrabold text-blue-100 mb-3">{item.num}</div>
-                <h3 className="text-xl font-bold text-gray-800 mb-2">{item.title}</h3>
+                <div className="text-5xl font-extrabold text-blue-400 mb-3">{item.num}</div>
+                <h3 className="text-2xl font-bold text-gray-800 mb-2">{item.title}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
               </div>
             ))}
@@ -88,9 +88,9 @@ export default function Home() {
       </section>
 
       {/* 利用者の声 */}
-      <section className="py-24 px-6 bg-gray-50">
+      <section className="py-24 px-6" style={{background: "#e8eef4"}}>
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">利用者の声</h2>
+          <h2 className="text-4xl font-bold text-gray-800 mb-4">利用者の声</h2>
           <p className="text-gray-500 mb-14">実際に始めた方々のリアルな声</p>
           <div className="grid md:grid-cols-3 gap-10">
             {[
@@ -129,9 +129,9 @@ export default function Home() {
       </section>
 
       {/* ご利用の流れ */}
-      <section id="flow" className="py-24 px-6 bg-blue-50">
+      <section id="flow" className="py-24 px-6" style={{background: "#dce6f0"}}>
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">ご利用の流れ</h2>
+          <h2 className="text-4xl font-bold text-gray-800 mb-4">ご利用の流れ</h2>
           <p className="text-gray-500 mb-14">最短即日でスタートできます</p>
           <div className="flex flex-col gap-6">
             {[
@@ -154,18 +154,18 @@ export default function Home() {
 
       {/* お問い合わせ */}
       <section id="contact" className="py-24 px-6 text-white text-center" style={{background: "linear-gradient(135deg, #1a3a5c 0%, #2e6fa8 25%, #5ab4d6 50%, #1e5f8e 75%, #0d2a47 100%)"}}>
-        <h2 className="text-3xl font-bold mb-4">まずは無料相談から</h2>
+        <h2 className="text-4xl font-bold mb-4">まずは無料相談から</h2>
         <p className="text-blue-200 mb-10 text-lg">お気軽にお問い合わせください。副業スタートをしっかりサポートします。</p>
         <a
           href="mailto:hongzhongyuuji99@gmail.com"
-          className="inline-block bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold text-lg px-10 py-4 rounded-full shadow-lg transition"
+          className="glow-button inline-block bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold text-lg px-10 py-4 rounded-full shadow-lg transition"
         >
           メールで問い合わせる
         </a>
       </section>
 
       {/* フッター */}
-      <footer className="bg-gray-900 text-gray-400 text-center py-6 text-sm">
+      <footer className="bg-gray-800 text-gray-400 text-center py-6 text-sm">
         © 2026 Gathering of Genius. All rights reserved.
       </footer>
 
