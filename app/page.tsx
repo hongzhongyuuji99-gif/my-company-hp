@@ -174,12 +174,27 @@ export default function Home() {
       <section id="contact" className="py-24 px-6 text-white text-center" style={{background: "linear-gradient(135deg, #1a3a5c 0%, #2e6fa8 25%, #5ab4d6 50%, #1e5f8e 75%, #0d2a47 100%)"}}>
         <h2 className="text-4xl font-bold mb-4">まずは無料相談から</h2>
         <p className="text-blue-200 mb-10 text-lg">お気軽にお問い合わせください。副業スタートをしっかりサポートします。</p>
-        <a
-          href="mailto:hongzhongyuuji99@gmail.com"
-          className="glow-button inline-block bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold text-lg px-10 py-4 rounded-full shadow-lg transition"
-        >
-          メールで問い合わせる
-        </a>
+        <div className="flex flex-col items-center gap-5">
+          {/* LINE友だち追加（メインCTA） */}
+          <a
+            href="https://line.me/R/ti/p/@618affqj"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="glow-button-line inline-flex items-center gap-3 text-white font-bold text-2xl md:text-3xl px-12 py-5 rounded-full shadow-lg transition hover:opacity-90"
+            style={{background: "#06C755"}}
+          >
+            <span className="text-3xl">💬</span>
+            LINEで無料相談する
+          </a>
+          <p className="text-blue-100 text-sm">＼ 友だち追加して「1日10分の副収入」を気軽に相談 ／</p>
+          {/* メール（サブ） */}
+          <a
+            href="mailto:hongzhongyuuji99@gmail.com"
+            className="inline-block text-blue-200 underline text-sm hover:text-white transition"
+          >
+            または メールで問い合わせる
+          </a>
+        </div>
       </section>
 
       {/* フッター */}

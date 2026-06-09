@@ -35,3 +35,14 @@ body {
   50%  { box-shadow: 0 0 24px 8px rgba(253, 224, 71, 0.9), 0 0 48px 16px rgba(253, 224, 71, 0.3); }
   100% { box-shadow: 0 0 8px 2px rgba(253, 224, 71, 0.4); }
 }
+
+/* LINEボタン グローエフェクト（LINEグリーン） */
+.glow-button-line {
+  animation: glowPulseLine 1.5s ease-in-out infinite;
+}
+
+@keyframes glowPulseLine {
+  0%   { box-shadow: 0 0 8px 2px rgba(6, 199, 85, 0.4); }
+  50%  { box-shadow: 0 0 24px 8px rgba(6, 199, 85, 0.9), 0 0 48px 16px rgba(6, 199, 85, 0.3); }
+  100% { box-shadow: 0 0 8px 2px rgba(6, 199, 85, 0.4); }
+}
