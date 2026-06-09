@@ -36,10 +36,14 @@ export default function Home() {
               成果報酬型だから<span className="font-bold text-white">赤字になるリスクなし。</span>
             </p>
               <a
-                href="#contact"
-                className="glow-button inline-block bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold text-4xl px-12 py-5 rounded-full shadow-lg transition"
+                href="https://line.me/R/ti/p/@618affqj"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="glow-button inline-flex items-center gap-3 text-white font-bold text-4xl px-12 py-5 rounded-full shadow-lg transition hover:opacity-90"
+                style={{background: "#06C755"}}
               >
-                無料相談はこちら
+                <span className="text-4xl">💬</span>
+                LINEで無料相談する
               </a>
           </div>
           <div className="flex-1 flex justify-center relative">
