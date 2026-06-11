@@ -46,3 +46,14 @@ body {
   50%  { box-shadow: 0 0 24px 8px rgba(6, 199, 85, 0.9), 0 0 48px 16px rgba(6, 199, 85, 0.3); }
   100% { box-shadow: 0 0 8px 2px rgba(6, 199, 85, 0.4); }
 }
+
+/* 料金比較ページ（/price）の2カラム（左:他社3 / 右:自社大） */
+.price-grid {
+  display: grid;
+  grid-template-columns: 0.82fr 1fr;
+  gap: 13px;
+  align-items: stretch;
+}
+@media (max-width: 480px) {
+  .price-grid { gap: 9px; }
+}
