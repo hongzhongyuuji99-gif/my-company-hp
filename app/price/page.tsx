@@ -40,7 +40,7 @@ export default function Price() {
               <div style={{ color: "#f5d76e", fontSize: 28, fontWeight: 500, lineHeight: 1.2 }}>55,000円</div>
             </div>
             <div style={{ marginBottom: 11 }}>
-              <div style={{ color: "#9a9382", fontSize: 12 }}>月額</div>
+              <div style={{ color: "#9a9382", fontSize: 12 }}>月額（当社へ支払う固定費）</div>
               <div style={{ color: "#7ee0a0", fontSize: 28, fontWeight: 500, lineHeight: 1.2 }}>0円</div>
             </div>
             <div style={{ marginBottom: 12 }}>
