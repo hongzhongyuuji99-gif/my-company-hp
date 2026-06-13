@@ -43,9 +43,12 @@ export default function Price() {
               <div style={{ color: "#9a9382", fontSize: 12 }}>月額</div>
               <div style={{ color: "#7ee0a0", fontSize: 28, fontWeight: 500, lineHeight: 1.2 }}>0円</div>
             </div>
-            <div style={{ color: "#7ee0a0", fontSize: 15, fontWeight: 500, marginBottom: 11 }}>成果報酬：利益の50%だけ</div>
-            <div style={{ color: "#cfc18a", fontSize: 13, lineHeight: 1.7, marginBottom: 15 }}>
-              月額固定はゼロ。利益が出たぶんから頂くので、運営もあなたと一緒に「売れる」ことに本気です。
+            <div style={{ marginBottom: 12 }}>
+              <div style={{ color: "#9a9382", fontSize: 12 }}>成果報酬</div>
+              <div style={{ color: "#7ee0a0", fontSize: 20, fontWeight: 500, lineHeight: 1.2 }}>利益の50％のみ</div>
+            </div>
+            <div style={{ color: "#cfc18a", fontSize: 13, lineHeight: 1.85, marginBottom: 15 }}>
+              毎月の固定コンサル費用は不要。必要なのはeBayショップ維持費のみ。利益が出た時だけ成果報酬を頂くため、私たちも本気で売上アップをサポートします。
             </div>
             <a
               href="https://calendar.app.google/ekqLmu1eTZAXyxhNA"

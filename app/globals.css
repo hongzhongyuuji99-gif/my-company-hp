@@ -55,5 +55,5 @@ body {
   align-items: stretch;
 }
 @media (max-width: 480px) {
-  .price-grid { gap: 9px; }
+  .price-grid { grid-template-columns: 1fr; gap: 11px; }
 }
