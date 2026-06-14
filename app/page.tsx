@@ -5,7 +5,11 @@ export default function Home() {
       {/* ナビゲーション */}
       <header className="sticky top-0 z-50 shadow-sm" style={{background: "#f0f4f8"}}>
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-          <div className="text-xl font-bold text-blue-700">Gathering of Genius</div>
+          <div className="flex items-center gap-2">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/logo.png.png" alt="EXIA" className="h-12 w-12 object-contain" style={{mixBlendMode: "multiply"}} />
+            <span className="text-5xl font-bold text-blue-700">EXIA</span>
+          </div>
           <nav className="hidden md:flex gap-8 text-sm font-medium text-gray-600">
             <a href="#service" className="hover:text-blue-600">サービス</a>
             <a href="#merit" className="hover:text-blue-600">選ばれる理由</a>
@@ -20,7 +24,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
           <div className="flex-1 text-center md:text-left">
             <p className="text-blue-200 text-xl font-semibold uppercase tracking-widest mb-4">eBay副業コンサルティング</p>
-            <div className="mb-4 inline-flex items-center justify-center" style={{
+            <div className="mb-4 flex items-center justify-center" style={{
               width: "440px",
               height: "130px",
               clipPath: "polygon(50% 0%, 56% 12%, 66% 4%, 68% 17%, 80% 8%, 80% 22%, 93% 16%, 90% 30%, 100% 28%, 95% 42%, 100% 50%, 95% 58%, 100% 72%, 90% 70%, 93% 84%, 80% 78%, 80% 92%, 68% 83%, 66% 96%, 56% 88%, 50% 100%, 44% 88%, 34% 96%, 32% 83%, 20% 92%, 20% 78%, 7% 84%, 10% 70%, 0% 72%, 5% 58%, 0% 50%, 5% 42%, 0% 28%, 10% 30%, 7% 16%, 20% 22%, 20% 8%, 32% 17%, 34% 4%, 44% 12%)",
