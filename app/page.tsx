@@ -106,6 +106,53 @@ export default function Home() {
         </div>
       </section>
 
+      {/* 実績セクション */}
+      <section className="py-24 px-6" style={{background: "#0d2a47"}}>
+        <div className="max-w-5xl mx-auto text-center">
+          <p className="text-yellow-400 text-sm font-bold uppercase tracking-widest mb-3">REAL RESULTS</p>
+          <h2 className="text-4xl font-bold text-white mb-4">実際の運用実績</h2>
+          <p className="text-blue-200 mb-16">2026年4月に登録したアカウントの実データ</p>
+
+          {/* 大きな数字 */}
+          <div className="grid md:grid-cols-3 gap-6 mb-16">
+            {[
+              { label: "3ヶ月累計売上", value: "¥993,000", sub: "US $6,415.98" },
+              { label: "月間最高売上（5月）", value: "¥542,000", sub: "US $3,500+" },
+              { label: "運用開始から", value: "3ヶ月", sub: "2026年4月スタート" },
+            ].map((s) => (
+              <div key={s.label} className="rounded-2xl p-8" style={{background: "rgba(255,255,255,0.07)", border: "1px solid rgba(255,255,255,0.15)"}}>
+                <p className="text-blue-300 text-sm mb-2">{s.label}</p>
+                <p className="text-yellow-400 text-4xl font-extrabold mb-1">{s.value}</p>
+                <p className="text-blue-400 text-sm">{s.sub}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* 棒グラフ */}
+          <div className="rounded-2xl p-10" style={{background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)"}}>
+            <p className="text-white font-bold text-lg mb-8 text-left">月別売上推移（US$）</p>
+            <div className="flex items-end justify-around gap-4" style={{height: "200px"}}>
+              {[
+                { month: "4月", value: 700, max: 3500, color: "#3b82f6" },
+                { month: "5月", value: 3500, max: 3500, color: "#f59e0b" },
+                { month: "6月", value: 2200, max: 3500, color: "#3b82f6" },
+              ].map((bar) => (
+                <div key={bar.month} className="flex flex-col items-center gap-2 flex-1">
+                  <p className="text-white text-sm font-bold">${bar.value.toLocaleString()}</p>
+                  <div className="w-full rounded-t-lg" style={{
+                    height: `${(bar.value / bar.max) * 160}px`,
+                    background: bar.color,
+                  }} />
+                  <p className="text-blue-300 text-sm">{bar.month}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <p className="text-blue-400 text-xs mt-6">※eBayセラーダッシュボードの実データをもとに作成</p>
+        </div>
+      </section>
+
       {/* 利用者の声 */}
       <section className="py-24 px-6" style={{background: "#e8eef4"}}>
         <div className="max-w-5xl mx-auto text-center">
