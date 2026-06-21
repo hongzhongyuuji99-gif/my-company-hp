@@ -20,44 +20,24 @@ export default function Home() {
       </header>
 
       {/* ヒーローセクション */}
-      <section className="text-white py-28 px-6 relative" style={{background: "linear-gradient(135deg, #1a3a5c 0%, #2e6fa8 25%, #5ab4d6 50%, #1e5f8e 75%, #0d2a47 100%)"}}>
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
-          <div className="flex-1 text-center md:text-left">
-            <p className="text-blue-200 text-xl font-semibold uppercase tracking-widest mb-4">eBay副業コンサルティング</p>
-            <div className="mb-4 flex items-center justify-center" style={{
-              width: "440px",
-              height: "130px",
-              clipPath: "polygon(50% 0%, 56% 12%, 66% 4%, 68% 17%, 80% 8%, 80% 22%, 93% 16%, 90% 30%, 100% 28%, 95% 42%, 100% 50%, 95% 58%, 100% 72%, 90% 70%, 93% 84%, 80% 78%, 80% 92%, 68% 83%, 66% 96%, 56% 88%, 50% 100%, 44% 88%, 34% 96%, 32% 83%, 20% 92%, 20% 78%, 7% 84%, 10% 70%, 0% 72%, 5% 58%, 0% 50%, 5% 42%, 0% 28%, 10% 30%, 7% 16%, 20% 22%, 20% 8%, 32% 17%, 34% 4%, 44% 12%)",
-              background: "#e00",
-            }}>
-              <span className="font-extrabold text-white text-center leading-tight text-5xl">業界初！！</span>
-            </div>
-            <h1 className="text-5xl md:text-7xl font-extrabold leading-tight mb-6 whitespace-nowrap">
-              固定費0円！<br />安心安全な副業！
-            </h1>
-            <p className="text-blue-100 text-xl md:text-2xl mb-10">
-              出品・在庫管理はすべておまかせ。<br />
-              成果報酬型だから<span className="font-bold text-white">赤字になるリスクなし。</span>
-            </p>
-              <a
-                href="https://line.me/R/ti/p/@618affqj"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="glow-button inline-flex items-center gap-3 text-white font-bold text-4xl px-12 py-5 rounded-full shadow-lg transition hover:opacity-90"
-                style={{background: "#06C755"}}
-              >
-                <span className="text-4xl">💬</span>
-                LINEで無料相談する
-              </a>
-          </div>
-          <div className="flex-1 flex justify-center relative">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/背景透過画像.png"
-              alt="スーツ姿の女性"
-              className="object-cover" style={{width: "720px", maxWidth: "90vw"}}
-            />
-          </div>
+      <section>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/ChatGPT Image 2026年6月21日 22_52_43.png"
+          alt="副業をサポート"
+          className="w-full object-cover"
+        />
+        <div className="flex justify-start py-8" style={{background: "#0d1117", paddingLeft: "8%", marginTop: "-160px"}}>
+          <a
+            href="https://line.me/R/ti/p/@618affqj"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="glow-button w-full flex items-center justify-center gap-3 text-white font-bold text-2xl md:text-3xl py-6 rounded-full shadow-lg transition hover:opacity-90"
+            style={{background: "#06C755", maxWidth: "700px"}}
+          >
+            <span className="text-3xl">💬</span>
+            LINEで無料相談する
+          </a>
         </div>
       </section>
 
