@@ -8,7 +8,7 @@ export default function Home() {
           <div className="flex items-center gap-2">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/logo.png.png" alt="EXIA" className="h-12 w-12 object-contain" style={{mixBlendMode: "multiply"}} />
-            <span className="text-5xl font-bold text-blue-700">EXIA</span>
+            <span className="text-5xl font-bold text-blue-700">海外輸出で稼ぐならEXIA！</span>
           </div>
           <nav className="hidden md:flex gap-8 text-sm font-medium text-gray-600">
             <a href="#service" className="hover:text-blue-600">サービス</a>
