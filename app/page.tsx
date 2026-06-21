@@ -27,7 +27,7 @@ export default function Home() {
           alt="副業をサポート"
           className="w-full object-cover"
         />
-        <div className="flex justify-start py-8" style={{background: "#0d1117", paddingLeft: "8%", marginTop: "-160px"}}>
+        <div className="flex justify-start py-8 md:-mt-40" style={{background: "#0d1117", paddingLeft: "8%"}}>
           <a
             href="https://line.me/R/ti/p/@618affqj"
             target="_blank"
