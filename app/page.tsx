@@ -29,14 +29,12 @@ export default function Home() {
         />
         <div className="flex justify-start py-8 md:-mt-40" style={{background: "#0d1117", paddingLeft: "8%"}}>
           <a
-            href="https://line.me/R/ti/p/@618affqj"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="mailto:info@exportshare.co.jp"
             className="glow-button w-full flex items-center justify-center gap-3 text-white font-bold text-2xl md:text-3xl py-6 rounded-full shadow-lg transition hover:opacity-90"
-            style={{background: "#06C755", maxWidth: "700px"}}
+            style={{background: "#2563eb", maxWidth: "700px"}}
           >
-            <span className="text-3xl">💬</span>
-            LINEで無料相談する
+            <span className="text-3xl">✉️</span>
+            メールで無料相談する
           </a>
         </div>
       </section>
@@ -210,25 +208,15 @@ export default function Home() {
         <h2 className="text-4xl font-bold mb-4">まずは無料相談から</h2>
         <p className="text-blue-200 mb-10 text-lg">お気軽にお問い合わせください。副業スタートをしっかりサポートします。</p>
         <div className="flex flex-col items-center gap-5">
-          {/* LINE友だち追加（メインCTA） */}
           <a
-            href="https://line.me/R/ti/p/@618affqj"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="glow-button-line inline-flex items-center gap-3 text-white font-bold text-2xl md:text-3xl px-12 py-5 rounded-full shadow-lg transition hover:opacity-90"
-            style={{background: "#06C755"}}
+            href="mailto:info@exportshare.co.jp"
+            className="glow-button inline-flex items-center gap-3 text-white font-bold text-2xl md:text-3xl px-12 py-5 rounded-full shadow-lg transition hover:opacity-90"
+            style={{background: "#2563eb"}}
           >
-            <span className="text-3xl">💬</span>
-            LINEで無料相談する
+            <span className="text-3xl">✉️</span>
+            メールで無料相談する
           </a>
-          <p className="text-blue-100 text-sm">＼ 友だち追加して「1日10分の副収入」を気軽に相談 ／</p>
-          {/* メール（サブ） */}
-          <a
-            href="mailto:hongzhongyuuji99@gmail.com"
-            className="inline-block text-blue-200 underline text-sm hover:text-white transition"
-          >
-            または メールで問い合わせる
-          </a>
+          <p className="text-blue-100 text-sm">info@exportshare.co.jp</p>
         </div>
       </section>
 
